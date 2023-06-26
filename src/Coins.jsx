@@ -48,7 +48,6 @@ const Coins = () => {
           name={icon[index].name}
           price={icon[index].price}
           symbol={icon[index].symbol}
-          index={index}
         />
       ))}
     </>

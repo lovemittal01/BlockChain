@@ -1,6 +1,6 @@
 import React from "react";
 
-const Div = ({ icon, name, price, symbol, index }) => {
+const Div = ({ icon, name, price, symbol }) => {
   return (
     <>
       <div className="bit-box">
@@ -14,7 +14,6 @@ const Div = ({ icon, name, price, symbol, index }) => {
           <div className="value">{price}</div>
           <div className="symbol">({symbol})</div>
         </div>
-        <h1>{index}</h1>
       </div>
     </>
   );

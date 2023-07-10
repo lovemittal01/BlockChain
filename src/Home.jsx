@@ -1,4 +1,6 @@
 import React from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const Home = () => {
   return (
@@ -22,6 +24,7 @@ const Home = () => {
               </div>
             </div>
           </div>
+
           <div className="slide">
             <div className="bitcoin">
               <div className="box">
@@ -53,12 +56,13 @@ const Home = () => {
               </div>
             </div>
             <div className="social">
-              <img src="/images/fb.svg" alt="Facebook" srcset="" />
-              <img src="/images/ig.svg" alt="Instagram" srcset="" />
-              <img src="/images/twittter.svg" alt="Twitter" srcset="" />
-              <img src="/images/line.svg" alt="Line" srcset="" />
+              <img src="/images/fb.svg" alt="Facebook" className="im" />
+              <img src="/images/ig.svg" alt="Instagram" className="im" />
+              <img src="/images/twittter.svg" alt="Twitter" className="im" />
+              <img src="/images/line.svg" alt="Line" className="" />
             </div>
           </div>
+
           <div className="imgs">
             <img
               src="/images/headbottomimg.png"

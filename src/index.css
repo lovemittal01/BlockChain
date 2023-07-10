@@ -19,6 +19,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 20px;
+  height: fit-content;
 }
 
 /* Background */
@@ -63,16 +64,17 @@ body {
 .landing {
   height: fit-content;
   width: fit;
+  /* background-color: yellow; */
 }
 
 .fran {
   height: fit-content;
-  margin-left: 70px;
   margin-top: 10px;
   margin-bottom: 5px;
   width: fit;
   display: flex;
   align-items: center;
+  /* background-color: blue; */
 }
 
 .pk {
@@ -80,6 +82,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 1rem;
+  /* background-color: purple; */
 }
 
 .pk-top {
@@ -102,7 +106,23 @@ body {
   justify-content: space-between;
 }
 
+.slide2 {
+  background-color: pink;
+  color: white;
+
+  font-size: 300%;
+  font-weight: bolder;
+}
+.slide3 {
+  background-color: purple;
+  color: white;
+
+  font-size: 300%;
+  font-weight: bolder;
+}
+
 .bitcoin {
+  /* background-color: brown; */
   height: 520px;
   width: 1170px;
   padding: 5px;
@@ -111,7 +131,40 @@ body {
   justify-content: space-between;
 }
 
+.box {
+  /* background-color: green; */
+  width: 52vw;
+  height: fit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 2;
+}
+
+.merlab {
+  /* background-color: orange; */
+  width: fit-content;
+  height: 50vh;
+  font-size: 300%;
+  font-weight: bolder;
+  color: white;
+  margin-left: 90px;
+  text-shadow: 2px 2px 10px rgb(23, 143, 191);
+}
+.explore {
+  /* background-color: fuchsia; */
+  width: 17vw;
+  height: 30vh;
+  margin-left: 90px;
+  margin-bottom: 10vh;
+}
+.explore img {
+  width: 17vw;
+  height: 40vh;
+}
 .bit {
+  /* background-color: yellowgreen; */
   width: fit-content;
   height: 470px;
   display: flex;
@@ -134,39 +187,8 @@ body {
   height: 600px;
 }
 
-.box {
-  width: 52vw;
-  height: fit;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: absolute;
-  z-index: 2;
-}
-
-.merlab {
-  width: fit-content;
-  height: 50vh;
-  font-size: 300%;
-  font-weight: bolder;
-  color: white;
-  margin-left: 90px;
-  text-shadow: 2px 2px 10px rgb(23, 143, 191);
-}
-
-.explore {
-  width: 17vw;
-  height: 30vh;
-  margin-left: 90px;
-  margin-bottom: 10vh;
-}
-
-.explore img {
-  width: 17vw;
-  height: 40vh;
-}
-
 .social {
+  /* background-color: black; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -174,6 +196,11 @@ body {
   height: 600px;
   width: 35px;
   align-items: center;
+}
+
+.im {
+  min-width: 30px;
+  max-width: 30px;
 }
 
 .imgs {
@@ -503,4 +530,20 @@ body {
   color: white;
   font-size: 90%;
   font-weight: 400;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .bitcoin {
+    align-items: center;
+    justify-content: center;
+  }
+  .slide {
+    padding: 1rem;
+  }
+  .box {
+    height: fit-content;
+    width: 40rem;
+  }
 }
